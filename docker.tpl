@@ -25,3 +25,6 @@ az acr login --name aspcoredocker
 open port 5000 on nsg
 
 docker run -it --rm -p 5000:80 aspcoredocker.azurecr.io/rakeshwebtech/aspdockerproject:40
+
+
+http://52.142.50.236:5000/
