@@ -18,3 +18,6 @@ echo "deb [arch=`dpkg --print-architecture` signed-by=/etc/apt/keyrings/microsof
     
 sudo apt-get update
 sudo apt-get install azure-cli
+
+az login - > from docker cli
+az acr login --name aspcoredocker
