@@ -21,3 +21,7 @@ sudo apt-get install azure-cli
 
 az login - > from docker cli
 az acr login --name aspcoredocker
+
+open port 5000 on nsg
+
+docker run -it --rm -p 5000:80 aspcoredocker.azurecr.io/rakeshwebtech/aspdockerproject:40
