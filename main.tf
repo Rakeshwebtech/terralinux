@@ -70,7 +70,7 @@ resource "azurerm_linux_virtual_machine" "vm" {
   size                  = "Standard_B2s"
   admin_username        = "adminuser"
   network_interface_ids = [azurerm_network_interface.nic.id,]
-  custom_data           = base64encode("docker.tpl")
+  custom_data = filebase64("${path.module}/cloud-init.txt")
 
   admin_ssh_key {
     username   = "adminuser"
